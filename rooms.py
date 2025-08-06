@@ -27,7 +27,7 @@ SECRET_ROOMS = {
             'interact': {
                 'lamp post': "Still warm. Someone—or something—was just here.",
                 'wet book': "The title reads 'Tale of Jiraiya the Galant.'",
-                'door': "A glowing EXIT door stands under a rusty archway. Type 'enter door' to proceed to the next temple."
+                'door': "A glowing EXIT door stands under a rusty archway. Type 'leave' to exit."
             }
         },
     ],
@@ -55,7 +55,7 @@ SECRET_ROOMS = {
             'desc': "A glossy, modern garage houses 13 iconic cars.\nA A bright white door glows at the end of the room.",
             'interact': {
                 'cars': "You see: GTR32, GTR33, GTR34, GTR35, EK9 Type R, NSX Type R, \nRX7 FC, RX7 FD, RX8, 911 GTR, LFA, Lambo Diablo, Ferrari F40. \nBut sadly you can only see them. \nYou are not worthy to drive them. \nYet.",
-                'door': "An EXIT door stands at the end of the room.\nType 'enter door' to proceed to the next temple."
+                'door': "An EXIT door stands at the end of the room.\nType 'leave' to exit."
             }
         },
     ],
@@ -98,7 +98,7 @@ SECRET_ROOMS = {
                 'squad 12': "Captain: Mayuri Kurotsuchi, Lt: Nemu Kurotsuchi",
                 'squad 13': "Captain: Jushiro Ukitake, Lt: Kaien Shiba (deceased) / Rukia Kuchiki (later)",
                 'note': "The Soul Society still reels from betrayal of Sousuke Aizen; \nA being made from the exact likeness of Sama-Ji \nby future Aizen. \nAn Anomaly, A Singularity.",
-                'door': "Urahara points you at the EXIT. Type 'enter door' to proceed to the next temple."
+                'door': "Urahara points you at the EXIT. Type 'leave' to exit."
             }
         },
     ],
@@ -129,7 +129,7 @@ SECRET_ROOMS = {
             'desc': "Floating neon architecture. Robots fighting AIs. Earth split in two.\nA glowing EXIT door glows under a futuristic archway.",
             'interact': {
                 'terminal': "SYSTEM WARNING: 69th Dimensional Rift Opening Imminent. \nSte'vi Ra and Veesus approaches! \nEntirerity of Universe in Danger! \nWill Sama-Ji destroy the usurper and save the world? \nOr would he reset everything and start from scratch?",
-                'door': "A glowing EXIT door stands under a futuristic archway. Type 'enter door' to proceed to the next temple."
+                'door': "A glowing EXIT door stands under a futuristic archway. Type 'leave' to exit."
             }
         },
     ],
@@ -156,7 +156,7 @@ SECRET_ROOMS = {
             'desc': "A colosseum-like arena with statues of goats..?\nA glowing EXIT door glows under a rusty statue of Franky doing SUPERRR Pose.",
             'interact': {
                 'statues': "The goats look at you menacingly",
-                'door': "A glowing EXIT door stands under Franky's crotch. Type 'enter door' to proceed to the next temple."
+                'door': "A glowing EXIT door stands under Franky's crotch. Type 'leave' to exit."
             }
         },
     ],
@@ -180,7 +180,7 @@ SECRET_ROOMS = {
                 'scroll 2': LIBRARY['Prophecy Scroll 2'],
                 'scroll 3': LIBRARY['Prophecy Scroll 3'],
                 'scroll': LIBRARY['Poneglyph'],
-                'exit door': "A glowing EXIT door stands under a pair of huge tits.\nType 'enter door' to proceed to the next temple."
+                'exit door': "A glowing EXIT door stands under a pair of huge tits.\nType 'leave' to exit."
             }
         },
     ],
@@ -210,7 +210,7 @@ SECRET_ROOMS = {
             'interact': {
                 'mirror': "You see yourself... but older. Wiser. Or perhaps broken?",
                 'letter': "'Harry if you're reading this I'm probably dead. \nI am writing this to tell you what I see in this mirror. \nIts not socks, but I see myself Piloting the Eva01 \nand sometimes the Nu Gundam. Future is interesting Harry! \nDon't rush to death, live the future! Build Gundam with your Magic! \nYou're an Engineer Potter!",
-                'exit door': "A glowing EXIT door inside and old indoor tree. Type 'enter door' to proceed to the next temple."
+                'exit door': "A glowing EXIT door inside and old indoor tree. Type 'leave' to exit."
 
             }
         },
@@ -242,7 +242,7 @@ SECRET_ROOMS = {
             'desc': "A vast space of nothingness. Time and sound do not exist here. \nA EXIT door glows in the middle of emptiness.",
             'interact': {
                 'void': "Nothing answers back. That is your answer.",
-                'exit door': "A glowing EXIT door stands in the middle of nothingness. Type 'enter door' to proceed to the next temple."
+                'exit door': "A glowing EXIT door stands in the middle of nothingness Type 'leave' to exit."
             }
         },
     ],
@@ -255,11 +255,11 @@ def enter_secret_room(kunju, inventory):
         print(room['desc'])
         pois = ', '.join(room['interact'].keys())
         print(f"Point(s) of Interest: {pois}")
-        print("Hint: type 'inspect <Point of Interest>' or 'leave' to exit the room.")
+        print("Hint: type 'inspect <Point of Interest>' or 'leave' to exit the room and enter the next.")
         while True:
             cmd = input("\n> ").strip().lower()
             if cmd in ('leave', 'exit'):
-                print("You leave the secret room.\nType 'go north' to move forward.\nSUZUME!")
+                print("You left the secret room. Type 'look' to see where you are.")
                 break
             elif cmd.startswith('inspect '):
                 target = cmd[8:].strip()
