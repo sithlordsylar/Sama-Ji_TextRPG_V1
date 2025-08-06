@@ -119,6 +119,29 @@ class Realm:
             return
 
         print("You see nothing special about that.")
+        
+    # NEW: Add the use method to the Realm class
+    def use(self, args, inventory):
+        """
+        Handles the 'use' command within a Realm.
+        Currently, it specifically handles using the 'portal' in the 'portal_chamber'.
+        """
+        if not args:
+            print("Use what? Try 'use <object>'.")
+            return
+
+        target = ' '.join(args)
+
+        # Handle 'use portal' command
+        if self.current == 'portal_chamber' and target == 'portal':
+            # The can_exit method already contains the logic for whether the portal can be used.
+            # We just need to guide the user to the 'enter' command.
+            if self.can_exit(): # This will print messages if conditions are not met
+                print("The portal hums, ready for your departure. Type 'enter' to step through.")
+            # If can_exit() returns False, it will already have printed a message, so no need to print more.
+            return
+
+        print("You can't use that here.")
 
     def solve_puzzle(self, args, inventory):
         room = self.rooms[self.current]
