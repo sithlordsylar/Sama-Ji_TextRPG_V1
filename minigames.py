@@ -253,9 +253,10 @@ def binary_trivia(kunju):
     for q in questions:
         print(f"\n{q['clue']} (true/false)")
         ans = input("Answer: ").strip().lower()
-        if ans != q['answer'].lower():
+        if ans != q['answers'].lower():
             print("Wrong.")
             return False
         print("Correct!")
     print("You’ve mastered the binary truths! Owh Yeah!")
     return True
+
