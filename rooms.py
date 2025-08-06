@@ -267,6 +267,7 @@ def enter_secret_room(kunju, inventory):
                 for key in room['interact']:
                     # 🎤 Special interaction for Producer Studio booth
                     if key.lower() == "booth" and "booth" in target:
+                        print("You look into the recording booth. Inside you hear a recording is looping: 'KUNJUUUUU... ON THE LOOSE!'")
                         print("You step into the booth. Do you want to 'record' or 'play' a track?")
                         sub = input("> ").strip().lower()
                         if sub == "record":
@@ -280,7 +281,8 @@ def enter_secret_room(kunju, inventory):
                         break
                         
                     # 🎤 Special interaction for Producer Studio record collection
-                    if key.lower() == "record collection" and "record" in target:
+                    if key.lower() == "records" and ("record" in target or "collection" in target):
+                        print("A neatly arranged record collection from every single artist of every genre of every era and universes")
                         print("You are thinking to play one of the tracks. Choose a track from below.")
                         print("\nThe Losers Music\nSivaneshMusic\nSounds of Sama-ji!\nDivine Kunjus Music")
                         reccol = input("> ").strip().lower()
@@ -383,4 +385,3 @@ def enter_secret_room(kunju, inventory):
                 print("Commands: inspect <object>, leave, help")
             else:
                 print("Unrecognized command. Try 'help'.")
-
