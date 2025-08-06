@@ -323,7 +323,7 @@ def enter_secret_room(kunju, inventory):
                     # 📺 Special interaction for Current News
                     elif key.lower() == "news" and "news" in target:
                         print("The TV only shows current news. Choose a channel:\nCNN\nFakeNews\nPlipPlip\nTV69\nTV420")
-                        news = input("Choose the Channel: ").strip()
+                        news = input("Choose the Channel: ").strip().lower()
                         if news == "cnn":
                             print("You open CNN. \n'Trump and Elon Musk file for Divorce. \n'Trump snores when he sleeps and don't want to watch Boku no Pico with me' Says Elon Musk citing one of their many reasons for divorce.'")
                         if news == "fakenews":
@@ -335,7 +335,7 @@ def enter_secret_room(kunju, inventory):
                         if news == "tv420":
                             print("You open TV420. \n'Hatsune Miku, the digital pop idol, unexpectedly ran for \npresidency to be the Supreme Leader of the world and shockingly won, \nsecuring 96% of the global vote, leaving Donald Trump utterly bewildered. \nChancellor Palpatine of Naboo, observing from afar, remarked, We will watch your career with great interest. \nOn the other side, unable to fathom such a crushing defeat, \nrival candidate Trump and his lover Elon Musk \ncommitted the iconic Japanese shinju or double lover suicide together in a \nsurprising display of ultimate despair of new age lovers.'")
                         else:
-                            print("You just hum to the track awkwardly. The record player disappear.")
+                            print("Trump and Elon Musk file for Divorce. \n'Trump snores when he sleeps and don't want to watch Boku no Pico with me' Says Elon Musk citing one of their many reasons for divorce. \nIn Other News, Scientist uncovered preserved human body from 6900BCE. \nDNA Test reveals 100% DNA Match with Kanye West!")
                         found = True
                         break
                     
@@ -383,3 +383,4 @@ def enter_secret_room(kunju, inventory):
                 print("Commands: inspect <object>, leave, help")
             else:
                 print("Unrecognized command. Try 'help'.")
+
