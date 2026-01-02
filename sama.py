@@ -14,8 +14,10 @@ class Game:
     def main_menu(self):
         while True:
             print("---------------------------------------------------------")
-            print("Welcome to Sama-Ji TextRPG. Inspired by the legendary Zork")
+            print("The Sama-Ji Scroll: Arena 69")
+            print("Welcome to Sama-Ji Text RPG. Inspired by the legendary Zork")
             print("This game is developed in Python by the Left Hand of Sama-Ji \nTo choose the right Vessel for Sama-Ji's Return!")
+            print("By utilizing the latest technology of Earth-1218 of the 3rd Dimension \nWe managed to simulate and experience 0.00000069% of Sama-Ji's greatness")
             print("Owh Yeah!")
             print("---------------------------------------------------------")
             print("1) Start Game")
@@ -69,7 +71,7 @@ class Game:
             elif cmd in ('inspect door', 'look door'):
                 print("A divine aura radiates from within; your soul feels drawn toward it.")
             elif cmd in ('inspect hole', 'look hole'):
-                print("There's something about this hole, it makes me feel funny and...")
+                print("There's something about this hole, it makes me feel funny and should I...")
                 self.hole_interaction()
             elif cmd in ('look around', 'look', 'inspect room'):
                 print("The white walls stretch endlessly; only the door, the sign, and the floating hole occupy the room.")
@@ -86,16 +88,25 @@ class Game:
                 print("You realize staring at the hole gives your boner, confused, you step back, refocusing on the door and sign.")
                 return
             elif choice in ('look closer', 'look closer at hole'):
-                print("You walk closer and realize you're getting harder… then all goes black.")
-                print("You awaken back in the white room, dizzy but unharmed. Your boner gets harder")
+                print("You walk closer and realize you're getting harder… 'No!' You said\n 'KANDARA KAWASAKI!' you shouted and the voices stopped")
+                print("You awaken back in the white room, dizzy but unharmed.")
                 return
             elif choice in ('give in', 'give in to intrusive thoughts'):
                 sub = input("\nOptions: lick it / do it\n> ").strip().lower()
                 if sub == 'lick it':
-                    print("You kneel… a stream of white liquid gushes… you fainted.")
+                    print("You kneel… a stream of white liquid gushes.\nYou choke as you swallow the thick white liquid \n'That's a good Bitch' Says an Evil voice 'Zehahaha' it laughs\n you fainted.")
+                    print("You awaken back in the white room, dizzy but unharmed. Sama-Ji saved your kunju!")
                     return
                 elif sub == 'do it':
-                    print("You… insert the HDMI cable… you awaken back in the white room.")
+                    print("You walk closer and realize you're getting harder… \nyou realize what you have to do, your instinct don't lie \nYou got on your knees and your sight is fixed on the hole \nIt makes you drool, makes you feel-naughty")
+                    print("A voice from the hole says 'Who's a dirty bitch' \n'I am' you replied as you lick the hole /nAs ecstacy fills you and the hole moans louder.")
+                    print("You give in to your primordial instinct and rip open your pants \n your connect your hard rod into the hold \nIt's so tight but slippery \nYou feel pleasure")
+                    print("Suddenly you're overwhelmed with a sick vision \nYou see yourself as the great Kandara Kawasaki; Ste'vi 'Ra \nYou Realized you fell for his temptation")
+                    print("The voice echoes in your head laughing and saying 'You have given Dato a Rim Job! Zehahahaha!' \nThen the vision of the great Annunaki War fills your head \nYou see the men dying, not just the Men but the Women and Children too! \nYou slaid them like animals")
+                    print("Your vision changed, now you're Rudolph Hitla! \nYou witness the genocide of Juice Box People \nYou laugh as the boxes get flattened \nTheir snipped-tipped-straws being thrown into Oceans \nA Great Disaster")
+                    print("You can't take it no more! \n'Please Stop! I yield! I yield!' You screamed \n'Scream and Cream you bitch!' says Ste'Vi 'Ra \nSuddenly a loud divine voice boomed 'KANDARA KAWASAKI! UMBE!' \nSte'Vi 'Ra is silenced")
+                    print("Everything becomes black. Your soul feels lighter.")
+                    print("You awaken back in the white room, dizzy but unharmed. Sama-Ji saved your kunju!")
                     return
                 else:
                     print("Invalid choice.")
@@ -180,3 +191,4 @@ class Game:
 
 if __name__ == '__main__':
     Game().main_menu()
+
