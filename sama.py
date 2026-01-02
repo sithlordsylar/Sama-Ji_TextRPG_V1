@@ -95,7 +95,7 @@ class Game:
                 sub = input("\nOptions: lick it / do it\n> ").strip().lower()
                 if sub == 'lick it':
                     print("You kneel… a stream of white liquid gushes.\nYou choke as you swallow the thick white liquid \n'That's a good Bitch' Says an Evil voice 'Zehahaha' it laughs\n you fainted.")
-                    print("You awaken back in the white room, dizzy but unharmed. Sama-Ji saved your kunju!")
+                    print("You awaken back in the white room, you felt wrong")
                     return
                 elif sub == 'do it':
                     print("You walk closer and realize you're getting harder… \nyou realize what you have to do, your instinct don't lie \nYou got on your knees and your sight is fixed on the hole \nIt makes you drool, makes you feel-naughty")
@@ -191,4 +191,5 @@ class Game:
 
 if __name__ == '__main__':
     Game().main_menu()
+
 
