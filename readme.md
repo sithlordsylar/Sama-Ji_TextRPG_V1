@@ -1,6 +1,6 @@
-# Sama-Ji: Text-Based RPG of the Divine Kunjus
+# The Sama-Ji Scroll: Arena 69
 
-Welcome to **Sama-Ji the Text RPG**, a mythic text-based RPG written with the knowledge bestowed upon us by Sama-Ji! Traverse ancient temples, conquer trials in surreal realms, collect the almighty Kunjus’ divine fragments, and fulfill your destiny as the new vessel of the Supreme Swami Lord Vikramnantha Sama-Ji.
+Welcome to **The Sama-Ji Scroll: Arena 69**, a mythic text-based RPG written with the knowledge bestowed upon us by Sama-Ji! Traverse ancient temples, conquer trials in surreal realms, collect the almighty Kunjus’ divine fragments, and fulfill your destiny as the new vessel of the Supreme Swami Lord Vikramnantha Sama-Ji.
 
 ---
 
@@ -61,4 +61,5 @@ The whole concept of this game and the lore in itself is to see how much further
 Owh Yeah! Heil Sama Ji!
 Heil the 4th Reich!
 Heil the 69th Dimension Supreme Kunjus!
+
 
