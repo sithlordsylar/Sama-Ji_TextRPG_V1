@@ -51,9 +51,12 @@ class Game:
 
     def start(self):
         print("---------------------------------------------------------")
-        print("You find yourself in a featureless white room.")
-        print("A single door stands before you, and a small sign is affixed to it.")
-        print("In the otherwise empty space, a tiny hole, about 5 cm across, floats in mid-air.")
+        print("You find yourself in a featureless and infinitely expanding white room.")
+        print("A single door stands before you with two gigantic statue on it's each side")
+        print("On the right of the door stands a Hot Cat-Girl in maid outfit")
+        print("On the left of the door stands a Hot Anubis Mommy stands seductively")
+        print("Beside the Hot Cat-Girl affixed an old wooden sign")
+        print("In the otherwise empty space, a tiny hole, about 5 cm across, floats in mid-air. MENACINGLY. ゴゴゴ")
         sign_read = False
         while True:
             cmd = input("\nWhat do you do? ").strip().lower()
@@ -70,11 +73,17 @@ class Game:
                     break
             elif cmd in ('inspect door', 'look door'):
                 print("A divine aura radiates from within; your soul feels drawn toward it.")
+            elif cmd in ('inspect cat', 'look cat', 'inspect cat girl', 'inspect cat-girl'):
+                print("A Plaque Reads 'Divine Statue of Catto Waifu. Dedicated to the Kunju; Rishi D. Owh Yeah. The all-loving heart of Sama-Ji'")
+                print("uWu the Cat-Girl-Goddess Making me feel 'uWu-fied'. I better control myself")
+            elif cmd in ('inspect anubis', 'look anubis', 'inspect mommy', 'inspect mommy'):
+                print("A Plaque Reads 'Divine Statue of Anubis Mommy. Dedicated to the Kunju; Mob Siva. The Body of Sama-Ji – The source of Strength and Defense.'")
+                print("'Woof Woof' Did you just barked? Boy calm yourself.")       
             elif cmd in ('inspect hole', 'look hole'):
                 print("There's something about this hole, it makes me feel funny and should I...")
                 self.hole_interaction()
             elif cmd in ('look around', 'look', 'inspect room'):
-                print("The white walls stretch endlessly; only the door, the sign, and the floating hole occupy the room.")
+                print("The white walls stretch endlessly; only the door, two great waifu statues, the sign, and the floating hole occupy the room.")
             elif cmd in ('help', '?'):
                 self.show_help()
             else:
@@ -197,5 +206,6 @@ class Game:
 
 if __name__ == '__main__':
     Game().main_menu()
+
 
 
